@@ -45,6 +45,7 @@ function App() {
 
   return (
     <Container>
+      <h1>1번 SSO 프로젝트</h1>
       {!user && <LoginButton onClick={handleLogin}>로그인</LoginButton>}
       {user && <LoginButton onClick={handleLogout}>로그아웃</LoginButton>}
       <h1>👋 Welcome</h1>

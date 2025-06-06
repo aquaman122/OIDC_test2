@@ -7,4 +7,4 @@ export function decodeJWT(token: string) {
     console.error('JWT 디코딩 실패:', e);
     return null;
   }
-}
+};

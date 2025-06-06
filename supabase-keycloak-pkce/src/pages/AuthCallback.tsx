@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const VERIFIER_KEY = 'pkce-code-verifier';
-const REDIRECT_URI = 'http://localhost:3000/auth/callback';
+const REDIRECT_URI = 'https://oidc-test2.vercel.app/auth/callback';
 const TOKEN_ENDPOINT = 'http://localhost:8080/realms/supabase/protocol/openid-connect/token';
 const CLIENT_ID = 'supabase';
 

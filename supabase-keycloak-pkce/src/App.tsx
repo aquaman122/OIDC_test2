@@ -37,7 +37,7 @@ function App() {
     setUser(null);
 
     const KEYCLOAK_LOGOUT_URL = 'http://localhost:8080/realms/supabase/protocol/openid-connect/logout';
-    const redirectUri = encodeURIComponent('http://localhost:3000');
+    const redirectUri = encodeURIComponent('https://oidc-test2.vercel.app');
     window.location.href = `${KEYCLOAK_LOGOUT_URL}?redirect_uri=${redirectUri}`;
   };
   console.log(user);

@@ -30,7 +30,7 @@ export async function redirectToLoginWithPKCE() {
 
   const codeChallenge = await generateCodeChallenge(codeVerifier);
 
-  const redirectUri = encodeURIComponent('http://localhost:3000/auth/callback');
+  const redirectUri = encodeURIComponent('https://oidc-test2.vercel.app/auth/callback');
   const clientId = 'supabase';
   const scope = 'openid email profile';
   const state = crypto.randomUUID();

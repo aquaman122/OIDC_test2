@@ -11,7 +11,6 @@ const AuthCallback = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log('✅ useEffect triggered with search params:', location.search);
     const handleCallback = async () => {
       const params = new URLSearchParams(location.search);
       const code = params.get('code');
@@ -51,14 +50,14 @@ const AuthCallback = () => {
 
         navigate('/');
       } catch (error) {
-        console.error('❌ 로그인 처리 중 오류 발생', error);
+        console.error('로그인 처리 중 오류 발생', error);
       }
     };
 
     handleCallback();
   }, [location.search]);
 
-  return <div>🔐 로그인 중입니다...</div>;
+  return <div>로그인 중</div>;
 };
 
 export default AuthCallback;
